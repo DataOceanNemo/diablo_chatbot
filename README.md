@@ -75,12 +75,12 @@ python3 main.py
 - during chatbot playing response audio (eg. a long story), use hotword detection to interrupt and stop it, say hotword: `snowboy`. A 'ding' tone will play if the hotword detected.
 - switch language (currently only supporting English and Mandarin). Say `can you speak chinese?`, chatbot will switch to Mandarin mode. To switch back, say `你会说英语吗?`
 - the default phrase limit time (the duration you can say your prompt) is 5s. This is to prevent chatbot from hanging in a noisy environment.
-- if you want to say a long prompt, say `Can I ask you a long question?`. Chatbot will reply `Sure, no problem.`. THen the phrase limit time will be increased to 5 mins, and you will be able to ask a really long question. (note: please try it in a quiet environment for better performance.)
+- if you want to say a long prompt, say `Can I ask you a long question?`. Chatbot will reply `Sure, no problem.`. Then the phrase limit time will be increased to 5 mins, and you will be able to ask a really long question. (note: please try it in a quiet environment for better performance.)
 
 ### Tips for robot control
 
 Inspired by [Microsoft chatGPT for robotics](https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/).
 
 - to allow chatGPT to control diablo robot, say `activate motion control`
-- during motion control, try these commands `move forward`, `move forward`, `turn left`, `spin` in natural language
+- during motion control, try these commands `move forward`, `move backward`, `turn left`, `spin` in natural language
 - to deactivate chatGPT for robotics, say `release motion control`
